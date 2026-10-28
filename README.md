@@ -49,7 +49,7 @@ builds, and a demo mode that never pretends your traffic is protected.
 
 ### [vless-toolkit](https://github.com/Largo-m/vless-toolkit)
 
-Parse, validate, build, convert and **redact** VLESS / VMess / Trojan /
+Parse, validate, build, convert, **sort** and **redact** VLESS / VMess / Trojan /
 Shadowsocks share links and base64 subscriptions. Pure standard library, no
 network code, safe to drop into CI.
 
@@ -94,7 +94,7 @@ modular CLI and GUI.
 | Principle | What it means in practice |
 | :-- | :-- |
 | **Honest interfaces** | If a feature does not exist, the README says so and the UI says so. No fake "connected" states, no implied protection. |
-| **Tests before features** | Validation, parsing and process supervision are pure functions with real coverage — 101 tests in ExploitFA, 207 in vless-toolkit, headless in CI. |
+| **Tests before features** | Validation, parsing and process supervision are pure functions with real coverage — 108 tests in ExploitFA, 214 in vless-toolkit, headless in CI. |
 | **Small, boring dependencies** | Standard library first. Every unavoidable dependency is pinned, licensed and explained. |
 | **Reproducible builds** | Checksums for core binaries, `SHA256SUMS.txt` next to every artifact, releases built by a workflow from a tag. |
 | **Documentation as a feature** | Long READMEs with real screenshots and real command output, architecture notes that explain trade-offs, and tests that fail when a link breaks. |
@@ -105,8 +105,8 @@ modular CLI and GUI.
 
 <table>
 <tr>
-<td align="center"><b>101</b><br><sub>tests · ExploitFA</sub></td>
-<td align="center"><b>207</b><br><sub>tests · vless-toolkit</sub></td>
+<td align="center"><b>108</b><br><sub>tests · ExploitFA</sub></td>
+<td align="center"><b>214</b><br><sub>tests · vless-toolkit</sub></td>
 <td align="center"><b>3</b><br><sub>CI jobs · every PR</sub></td>
 <td align="center"><b>2</b><br><sub>release workflows</sub></td>
 <td align="center"><b>0</b><br><sub>telemetry endpoints</sub></td>
